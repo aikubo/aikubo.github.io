@@ -1,0 +1,32 @@
+.items {
+    list-style-type: none;
+    margin: 0;
+}
+
+.item {
+    margin: 1rem 0;
+
+}
+
+.head {
+    white-space: nowrap;
+    display: block;
+
+    h2 {
+        display: inline-block;
+        margin-bottom: 0rem;
+    }
+
+    h3 {
+        display: inline-block;
+        margin-left: 1rem;
+        margin-bottom: 0rem;
+        font-style: italic;
+    }
+
+    p {
+        display: block;
+        margin-left: 0rem;
+        font-size: .8rem;
+    }
+}

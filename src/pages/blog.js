@@ -6,7 +6,15 @@ import blogStyles from './blog.module.scss'
 const BlogPage = () => {
     const data = useStaticQuery(graphql`
         query {
-            allMarkdownRemark {
+            allMarkdownRemark (
+                filter: {
+                    frontmatter: {
+                        sourcetype: {
+                            eq: "blog"
+                        }
+                    }
+                }
+            ) {
                 edges {
                     node {
                         frontmatter {
@@ -25,6 +33,7 @@ const BlogPage = () => {
     return (
         <Layout>
             <h1>Blog</h1>
+            <hr />
             <ol className={blogStyles.posts}>
                 {data.allMarkdownRemark.edges.map((edge) => {
                     return (
