@@ -11,22 +11,19 @@
 .head {
     white-space: nowrap;
     display: block;
+    margin-left: 0rem;
 
     h2 {
-        display: inline-block;
-        margin-bottom: 0rem;
+        margin-bottom: 0.5rem;
     }
 
     h3 {
-        display: inline-block;
-        margin-left: 1rem;
         margin-bottom: 0rem;
         font-style: italic;
+        color: #444444;
     }
 
     p {
-        display: block;
-        margin-left: 0rem;
         font-size: .8rem;
     }
 }

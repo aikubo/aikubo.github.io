@@ -44,7 +44,7 @@ const ResumePage = () => {
                         <li className={resumeStyles.item}>
                             <div className={resumeStyles.head}>
                                 <h2>
-                                    {edge.node.frontmatter.organization},
+                                    {edge.node.frontmatter.organization}
                                 </h2>
                                 <h3>
                                     {edge.node.frontmatter.role}
