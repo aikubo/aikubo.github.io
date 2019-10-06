@@ -53,7 +53,7 @@ const ResumePage = () => {
                                     {edge.node.frontmatter.start} to {edge.node.frontmatter.finish}
                                 </p>
                             </div>
-                            <div dangerouslySetInnerHTML={{ __html: edge.node.html}}>
+                            <div className={resumeStyles.body} dangerouslySetInnerHTML={{ __html: edge.node.html}}>
                             </div>
                         </li>
                     )
