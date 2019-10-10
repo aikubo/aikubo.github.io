@@ -1,15 +1,16 @@
 import React from 'react'
-import { Link, useStaticQuery } from 'gatsby'
+import { Link, graphql, useStaticQuery } from 'gatsby'
 import Layout from '../components/layout'
 import Img from 'gatsby-image'
+import indexStyles from './index.module.scss'
 
 const IndexPage = () => {
-    const data = useStaticQuery(`
+    const data = useStaticQuery(graphql`
     query MyQuery {
         image: file(relativePath: {eq: "images/allie.JPG"}) {
           childImageSharp {
-            fluid {
-              src
+            fixed {
+                ...GatsbyImageSharpFixed
             }
           }
         }
@@ -17,11 +18,10 @@ const IndexPage = () => {
 
     return (
         <Layout>
-            <Img fluid={data.image.childImageSharp.fluid}>
-            </Img>
-            <h1>Hello.</h1>
-            <h2>I'm Allison, a PhD student living in beautiful Eugene Oregon.</h2>
-            <p>Need a rock doc? <Link to="/contact">Contact Me.</Link></p>
+            <div className={indexStyles.container}>
+                <Img className={indexStyles.picture} fixed={data.image.childImageSharp.fixed} alt="A picture of Allison." />
+                 <p>I use computational models to explore volcanic flows.</p>
+            </div>
         </Layout>
     )
 } 

@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../components/layout'
+import Layout from '../components/layoutSidebar'
 import { graphql, useStaticQuery } from 'gatsby'
 import resumeStyles from './resume.module.scss'
 
