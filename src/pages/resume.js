@@ -1,7 +1,8 @@
 import React from 'react'
-import Layout from '../components/layoutSidebar'
+import Layout from '../components/layout'
 import { graphql, useStaticQuery } from 'gatsby'
 import resumeStyles from './resume.module.scss'
+import Sidebar from '../components/sidebar'
 
 const ResumePage = () => {
     const data = useStaticQuery(graphql`
@@ -36,6 +37,7 @@ const ResumePage = () => {
 
     return (
         <Layout>
+            <Sidebar />
             <h1>Resume</h1>
             <hr />
             <ol className={resumeStyles.items}>
