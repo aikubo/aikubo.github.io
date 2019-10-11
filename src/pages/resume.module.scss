@@ -1,3 +1,7 @@
+.subtitle {
+    font-size: 1.5rem;
+}
+
 .items {
     list-style-type: none;
     margin: 0;
@@ -5,12 +9,11 @@
 
 .item {
     margin: 1rem 0;
-
+    background-color: #f4f4f4;
+    padding: 1rem;
 }
 
 .head {
-    white-space: nowrap;
-    display: block;
     margin-left: 0rem;
 
     h2 {

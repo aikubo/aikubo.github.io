@@ -40,6 +40,7 @@ const ResumePage = () => {
             <Sidebar />
             <h1>Resume</h1>
             <hr />
+            <h2 className={resumeStyles.subtitle}>Experience</h2>
             <ol className={resumeStyles.items}>
                 {data.allMarkdownRemark.edges.map((edge) => {
                     return (

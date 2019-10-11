@@ -7,4 +7,4 @@ start: "MAY 2016"
 finish: "AUGUST 2016"
 ---
 
-Summer internship at the museum working on analysis of volcanic melt inclusions using the electron microprobe and secondary ion mass spectrometer under Dr. Adrian Fiege.
+Measured first sulfur isotope ratios in homoenized and quenched melt inclusions from the Pinatubo Dacite using the Secondary Ion Mass Spectrometer at WHOI. Advised by Adrian Fiege.
