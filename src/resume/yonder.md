@@ -7,4 +7,5 @@ start: "OCTOBER 2016"
 finish: "JUNE 2018"
 ---
 
-I manage a 50 person team of engineers and scientists. Last year, at the University Rover Challenge, a international collegiate robotics competition,  we advanced to the finals in Utah. 
+Lead team of 50+ interdisciplinary engineers and scientist to build a 50 kg semi-autonomous Mars rover
+for international competition. Raised over $15,000 for the team and built my own Raman Spectrometer.

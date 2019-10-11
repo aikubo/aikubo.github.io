@@ -7,4 +7,5 @@ start: "SEPTEMBER 2018"
 finish: "PRESENT"
 ---
 
-Using computational models to explore volcanic flows at high and low Reynolds numbers. 
+Using computational models to explore volcanic flows at high and low Reynolds numbers, from complex
+Finite Volume models to simple parameterized models. Advised by Joe Dufek and Leif Karlstrom. 
