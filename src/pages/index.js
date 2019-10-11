@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 import Layout from '../components/layout'
 import Img from 'gatsby-image'
 import indexStyles from './index.module.scss'
-import Header from '../components/header'
+import Sidebar from '../components/sidebar'
 
 const IndexPage = () => {
     const data = useStaticQuery(graphql`
@@ -19,7 +19,7 @@ const IndexPage = () => {
 
     return (
         <Layout>
-            <Header />
+            <Sidebar />
             <div className={indexStyles.container}>
                 <Img className={indexStyles.picture} fixed={data.image.childImageSharp.fixed} alt="A picture of Allison." />
                 <p>I use computational models to explore volcanic flows.</p>
