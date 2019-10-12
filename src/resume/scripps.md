@@ -5,6 +5,7 @@ location: "Ja Jolla, CA"
 role: "Undergraduate Researcher"
 start: "DECEMBER 2015"
 finish: "JUNE 2017"
+order: "5"
 ---
 
 Worked in a clean lab to measure highly siderophile elements and used equipment such as the LA-ICPMS to measure meteorite and basalt samples. Developed climate model to evaluate methane release from flood basalts. Advised by James Day.

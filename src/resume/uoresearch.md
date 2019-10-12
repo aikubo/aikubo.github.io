@@ -5,6 +5,7 @@ location: "Eugene, OR"
 role: "Research Assistant"
 start: "SEPTEMBER 2018"
 finish: "PRESENT"
+order: "1"
 ---
 
 Using computational models to explore volcanic flows at high and low Reynolds numbers, from complex

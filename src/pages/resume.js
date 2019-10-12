@@ -5,9 +5,19 @@ import resumeStyles from './resume.module.scss'
 import Sidebar from '../components/sidebar'
 
 const ResumePage = () => {
+    /*function compare(a, b) {
+        let comparison = 0;
+        if (Number(a.edges.node.frontmatter.order) > Number(b.edges.node.frontmatter.order)) {
+            comparison = 1;
+        } else if (Number(a.edges.node.frontmatter.order) < Number(b.edges.node.frontmatter.order)) {
+            comparison = -1;
+        }
+        return comparison;
+    } */
     const data = useStaticQuery(graphql`
         query {
             allMarkdownRemark (
+                sort: { order: ASC, fields: [frontmatter___order] }
                 filter: {
                     frontmatter: {
                         sourcetype: {
@@ -24,6 +34,7 @@ const ResumePage = () => {
                             role
                             start
                             finish
+                            order
                         }
                         fields {
                             slug
@@ -34,6 +45,9 @@ const ResumePage = () => {
             }
         }
     `)
+    
+    //data.sort(compare)
+    console.log(data.allMarkdownRemark)
 
     return (
         <Layout>
