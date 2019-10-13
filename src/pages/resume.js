@@ -3,6 +3,8 @@ import Layout from '../components/layout'
 import { graphql, useStaticQuery } from 'gatsby'
 import resumeStyles from './resume.module.scss'
 import Sidebar from '../components/sidebar'
+import Awards from '../components/awards'
+import Outreach from '../components/outreach'
 
 const ResumePage = () => {
     const expr = useStaticQuery(graphql`
@@ -36,33 +38,6 @@ const ResumePage = () => {
             }
         }
     `)
-    
-    const award = useStaticQuery(graphql`
-        query {
-            allMarkdownRemark (
-                sort: { order: ASC, fields: [frontmatter___order] }
-                filter: {
-                    frontmatter: {
-                        sourcetype: {
-                            eq: "resume-awards"
-                        }
-                    }
-                }) {
-
-                edges {
-                    node {
-                        frontmatter {
-                            organization
-                            role
-                            date
-                            order
-                            amount
-                        }
-                    }
-                }
-            }
-        }
-    `) 
 
     return (
         <Layout>
@@ -91,17 +66,8 @@ const ResumePage = () => {
                     )
                 })}
             </ol>
-            <h2 className={resumeStyles.subtitle}>Awards and Grants</h2>
-            <ol className={resumeStyles.items}>
-                {award.allMarkdownRemark.edges.map((edge) => {
-                    return (
-                        <li className={resumeStyles.item}>
-                            <div className={resumeStyles.head}>
-                            </div>
-                        </li>
-                    )
-                })}
-            </ol>
+            <Awards />
+            <Outreach />
 
         </Layout>
     )
