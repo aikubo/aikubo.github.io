@@ -1,5 +1,5 @@
 ---
-sourcetype: "resume"
+sourcetype: "resume-exp"
 organization: "University of Oregon"
 location: "Eugene, OR"
 role: "Research Assistant"

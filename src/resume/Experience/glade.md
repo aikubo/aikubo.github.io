@@ -1,5 +1,5 @@
 ---
-sourcetype: "resume"
+sourcetype: "resume-exp"
 organization: "Georgia Institute of Technology"
 location: "Atlanta, GA"
 role: "GLADE REU Awardee"

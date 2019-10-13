@@ -1,5 +1,5 @@
 ---
-sourcetype: "resume"
+sourcetype: "resume-exp"
 organization: "American Natural History Museum"
 location: "New York, NY"
 role: "NSF REU Participant"

@@ -1,5 +1,5 @@
 ---
-sourcetype: "resume"
+sourcetype: "resume-exp"
 organization: "Yonder Dynamics"
 location: "La Jolla, CA"
 role: "Director"

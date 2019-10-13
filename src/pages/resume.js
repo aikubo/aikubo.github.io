@@ -5,23 +5,14 @@ import resumeStyles from './resume.module.scss'
 import Sidebar from '../components/sidebar'
 
 const ResumePage = () => {
-    /*function compare(a, b) {
-        let comparison = 0;
-        if (Number(a.edges.node.frontmatter.order) > Number(b.edges.node.frontmatter.order)) {
-            comparison = 1;
-        } else if (Number(a.edges.node.frontmatter.order) < Number(b.edges.node.frontmatter.order)) {
-            comparison = -1;
-        }
-        return comparison;
-    } */
-    const data = useStaticQuery(graphql`
+    const expr = useStaticQuery(graphql`
         query {
             allMarkdownRemark (
                 sort: { order: ASC, fields: [frontmatter___order] }
                 filter: {
                     frontmatter: {
                         sourcetype: {
-                            eq: "resume"
+                            eq: "resume-exp"
                         }
                     }
                 }) {
@@ -46,17 +37,41 @@ const ResumePage = () => {
         }
     `)
     
-    //data.sort(compare)
-    console.log(data.allMarkdownRemark)
+    const award = useStaticQuery(graphql`
+        query {
+            allMarkdownRemark (
+                sort: { order: ASC, fields: [frontmatter___order] }
+                filter: {
+                    frontmatter: {
+                        sourcetype: {
+                            eq: "resume-awards"
+                        }
+                    }
+                }) {
+
+                edges {
+                    node {
+                        frontmatter {
+                            organization
+                            role
+                            date
+                            order
+                            amount
+                        }
+                    }
+                }
+            }
+        }
+    `) 
 
     return (
         <Layout>
             <Sidebar />
             <h1>Resume</h1>
             <hr />
-            <h2 className={resumeStyles.subtitle}>Experience</h2>
+            <h2 className={resumeStyles.subtitle}>Research Experience</h2>
             <ol className={resumeStyles.items}>
-                {data.allMarkdownRemark.edges.map((edge) => {
+                {expr.allMarkdownRemark.edges.map((edge) => {
                     return (
                         <li className={resumeStyles.item}>
                             <div className={resumeStyles.head}>
@@ -76,6 +91,18 @@ const ResumePage = () => {
                     )
                 })}
             </ol>
+            <h2 className={resumeStyles.subtitle}>Awards and Grants</h2>
+            <ol className={resumeStyles.items}>
+                {award.allMarkdownRemark.edges.map((edge) => {
+                    return (
+                        <li className={resumeStyles.item}>
+                            <div className={resumeStyles.head}>
+                            </div>
+                        </li>
+                    )
+                })}
+            </ol>
+
         </Layout>
     )
 }

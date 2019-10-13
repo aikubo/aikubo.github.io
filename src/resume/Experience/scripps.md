@@ -1,5 +1,5 @@
 ---
-sourcetype: "resume"
+sourcetype: "resume-exp"
 organization: "Scripps Institute of Oceanography Isotope Geochemistry Lab"
 location: "Ja Jolla, CA"
 role: "Undergraduate Researcher"
