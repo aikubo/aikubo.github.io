@@ -3,6 +3,8 @@ import Layout from '../components/layout'
 import Sidebar from '../components/sidebar'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import logStyles from './log.module.scss'
+import Img from 'gatsby-image'
+
 
 const LogPage = () => {
     const data = useStaticQuery(graphql`
