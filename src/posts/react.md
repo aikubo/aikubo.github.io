@@ -1,7 +1,7 @@
 ---
 title: "Fortran"
 date: "2019-09-30"
-sourcetype: "blog"
+sourcetype: "log"
 ---
 
 In this post I'll start my discussion about Fortran.

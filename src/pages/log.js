@@ -2,16 +2,16 @@ import React from 'react'
 import Layout from '../components/layout'
 import Sidebar from '../components/sidebar'
 import { Link, graphql, useStaticQuery } from 'gatsby'
-import blogStyles from './blog.module.scss'
+import logStyles from './log.module.scss'
 
-const BlogPage = () => {
+const LogPage = () => {
     const data = useStaticQuery(graphql`
         query {
             allMarkdownRemark (
                 filter: {
                     frontmatter: {
                         sourcetype: {
-                            eq: "blog"
+                            eq: "log"
                         }
                     }
                 }
@@ -34,13 +34,13 @@ const BlogPage = () => {
     return (
         <Layout>
             <Sidebar />
-            <h1>Blog</h1>
+            <h1>Log</h1>
             <hr />
-            <ol className={blogStyles.posts}>
+            <ol className={logStyles.posts}>
                 {data.allMarkdownRemark.edges.map((edge) => {
                     return (
-                        <li className={blogStyles.post}>
-                            <Link to={`/blog/${edge.node.fields.slug}`}>
+                        <li className={logStyles.post}>
+                            <Link to={`/log/${edge.node.fields.slug}`}>
                                 <h2>
                                     {edge.node.frontmatter.title}
                                 </h2>
@@ -56,4 +56,4 @@ const BlogPage = () => {
     )
 }
 
-export default BlogPage
+export default LogPage

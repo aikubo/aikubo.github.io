@@ -21,8 +21,8 @@ const Sidebar = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link className={sidebarStyles.navItem} activeClassName={sidebarStyles.activeNavItem} to='/blog'>
-                            Blog
+                        <Link className={sidebarStyles.navItem} activeClassName={sidebarStyles.activeNavItem} to='/log'>
+                            Log
                         </Link>
                     </li>
                     <li>

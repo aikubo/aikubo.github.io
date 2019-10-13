@@ -1,7 +1,7 @@
 ---
 title: "Sweet Luna Girl"
 date: "2019-10-02"
-sourcetype: "blog"
+sourcetype: "log"
 ---
 
 This is my sweet honk.
