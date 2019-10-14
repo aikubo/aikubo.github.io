@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-templates-blog-js","path":"/blog/warren","webpackCompilationHash":"582d888f202ca89e5594","result":{"data":{"markdownRemark":{"frontmatter":{"title":"","date":"2016"},"html":""}},"pageContext":{"isCreatedByStatefulCreatePages":false,"slug":"warren"}}}
+{"componentChunkName":"component---src-templates-blog-js","path":"/blog/warren","webpackCompilationHash":"582d888f202ca89e5594","result":{"pageContext":{"isCreatedByStatefulCreatePages":false,"slug":"warren"}}}
