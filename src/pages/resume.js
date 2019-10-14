@@ -2,7 +2,6 @@ import React from 'react'
 import Layout from '../components/layout'
 import { graphql, useStaticQuery } from 'gatsby'
 import resumeStyles from './resume.module.scss'
-import Sidebar from '../components/sidebar'
 import Awards from '../components/awards'
 import Outreach from '../components/outreach'
 
@@ -41,7 +40,6 @@ const ResumePage = () => {
 
     return (
         <Layout>
-            <Sidebar />
             <h1>Resume</h1>
             <hr />
             <h2 className={resumeStyles.subtitle}>Research Experience</h2>

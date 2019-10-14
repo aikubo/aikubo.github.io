@@ -1,10 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
-import Sidebar from '../components/sidebar'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import logStyles from './log.module.scss'
-import Img from 'gatsby-image'
-
 
 const LogPage = () => {
     const data = useStaticQuery(graphql`
@@ -35,7 +32,6 @@ const LogPage = () => {
 
     return (
         <Layout>
-            <Sidebar />
             <h1>Log</h1>
             <hr />
             <ol className={logStyles.posts}>
