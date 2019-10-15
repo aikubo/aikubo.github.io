@@ -1,8 +1,28 @@
 .container {
     display: flex;
     align-items: center;
+    flex-grow: 1;
 }
 
 .container p {
     padding-left: 1rem;
+}
+
+.content {
+    flex-grow: 1;
+    width: 50%;
+    display: inline-block;
+}
+
+@media (max-width: 750px) {
+    .container {
+        display: block;
+    }
+    .container p {
+        padding-top: 1rem;
+        padding-left: 0rem;
+    }
+    .content {
+        display: block;
+    }
 }

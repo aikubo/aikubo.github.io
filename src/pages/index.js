@@ -9,8 +9,8 @@ const IndexPage = () => {
     query MyQuery {
         image: file(relativePath: {eq: "images/allie.JPG"}) {
           childImageSharp {
-            fixed {
-                ...GatsbyImageSharpFixed
+            fluid {
+                ...GatsbyImageSharpFluid
             }
           }
         }
@@ -19,8 +19,8 @@ const IndexPage = () => {
     return (
         <Layout>
             <div className={indexStyles.container}>
-                <Img className={indexStyles.picture} fixed={data.image.childImageSharp.fixed} alt="A picture of Allison." />
-                <p>I use computational models to explore volcanic flows.</p>
+                <div className={indexStyles.content}><Img className={indexStyles.picture} fluid={data.image.childImageSharp.fluid} alt="A picture of Allison." /></div>
+                <div className={indexStyles.content}><p>I use computational models to explore volcanic flows.</p></div>
             </div>
         </Layout>
     )
