@@ -19,7 +19,7 @@ const IndexPage = () => {
     return (
         <Layout>
             <div className={indexStyles.container}>
-                <div className={indexStyles.content}><Img className={indexStyles.picture} fluid={data.image.childImageSharp.fluid} alt="A picture of Allison." /></div>
+                <div className={indexStyles.picture}><Img fluid={data.image.childImageSharp.fluid} alt="A picture of Allison." /></div>
                 <div className={indexStyles.content}><p>I use computational models to explore volcanic flows.</p></div>
             </div>
         </Layout>
