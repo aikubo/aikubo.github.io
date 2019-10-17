@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery, Link } from 'gatsby'
 import resumeStyles from './resume.module.scss'
 import Awards from '../components/awards'
 import Outreach from '../components/outreach'
@@ -46,7 +46,8 @@ const ResumePage = () => {
             <ol className={resumeStyles.items}>
                 {expr.allMarkdownRemark.edges.map((edge) => {
                     return (
-                        <li className={resumeStyles.item}>
+                        <Link to={`/resume/${edge.node.fields.slug}`} className={resumeStyles.item}>
+                            <li>
                             <div className={resumeStyles.head}>
                                 <h2>
                                     {edge.node.frontmatter.organization}
@@ -62,6 +63,7 @@ const ResumePage = () => {
                                 <p>{edge.node.frontmatter.about}</p>
                             </div>
                         </li>
+                        </Link>
                     )
                 })}
             </ol>
