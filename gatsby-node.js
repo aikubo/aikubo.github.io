@@ -17,6 +17,7 @@ module.exports.onCreateNode = ({ node, actions }) => {
 module.exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions
     const logTemplate = path.resolve('./src/templates/log.js')
+    const resumeTemplate = path.resolve('./src/templates/resume.js')
     const res = await graphql(`
         query {
             allMarkdownRemark {
@@ -25,6 +26,9 @@ module.exports.createPages = async ({ graphql, actions }) => {
                         fields {
                             slug
                         }
+                        frontmatter {
+                            sourcetype
+                        }
                     }
                 }
             }
@@ -32,12 +36,24 @@ module.exports.createPages = async ({ graphql, actions }) => {
     `)
     
     res.data.allMarkdownRemark.edges.forEach((edge) => {
-        createPage({
-            component: logTemplate,
-            path: `/log/${edge.node.fields.slug}`,
-            context: {
-                slug: edge.node.fields.slug
-            }
-        })
+        if (edge.node.frontmatter.sourcetype === 'log') {
+            createPage({
+                component: logTemplate,
+                path: `/log/${edge.node.fields.slug}`,
+                context: {
+                    slug: edge.node.fields.slug
+                }
+            })
+        }  
+
+        if (edge.node.frontmatter.sourcetype === 'resume-exp') {
+            createPage({
+                component: resumeTemplate,
+                path: `/resume/${edge.node.fields.slug}`,
+                context: {
+                    slug: edge.node.fields.slug
+                }
+            })
+        }
     })
 }
