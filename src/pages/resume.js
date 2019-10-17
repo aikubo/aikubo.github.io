@@ -27,11 +27,11 @@ const ResumePage = () => {
                             start
                             finish
                             order
+                            about
                         }
                         fields {
                             slug
                         }
-                        html
                     }
                 }
             }
@@ -58,7 +58,8 @@ const ResumePage = () => {
                                     {edge.node.frontmatter.start} to {edge.node.frontmatter.finish}
                                 </p>
                             </div>
-                            <div className={resumeStyles.body} dangerouslySetInnerHTML={{ __html: edge.node.html}}>
+                            <div className={resumeStyles.body}>
+                                <p>{edge.node.frontmatter.about}</p>
                             </div>
                         </li>
                     )

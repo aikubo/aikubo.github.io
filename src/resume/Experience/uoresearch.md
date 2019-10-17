@@ -6,7 +6,7 @@ role: "Research Assistant"
 start: "SEPTEMBER 2018"
 finish: "PRESENT"
 order: "1"
+about: "Using computational models to explore volcanic flows at high and low Reynolds numbers, from complex Finite Volume models to simple parameterized models. Advised by Joe Dufek and Leif Karlstrom."
 ---
 
-Using computational models to explore volcanic flows at high and low Reynolds numbers, from complex
-Finite Volume models to simple parameterized models. Advised by Joe Dufek and Leif Karlstrom. 
+ 
