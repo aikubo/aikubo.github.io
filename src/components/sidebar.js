@@ -1,16 +1,26 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
-
+import Img from 'gatsby-image'
 import sidebarStyles from './sidebar.module.scss'
 
 const Sidebar = () => {
-    const data = useStaticQuery(graphql`query { site { siteMetadata { title } } }`)
-
+    const data = useStaticQuery(graphql`
+    query UOQuery {
+        image: file(relativePath: {eq: "images/uo.png"}) {
+          childImageSharp {
+            fluid {
+                ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }`)
     return (
         <header className={sidebarStyles.sidebar}>
+                        <Img fluid={data.image.childImageSharp.fluid} alt="UO Logo." />
+
             <h1>
                 <Link className={sidebarStyles.title}>
-                    {data.site.siteMetadata.title}
+                    Allison Kubo
                 </Link>
             </h1>
             <nav>
@@ -18,6 +28,11 @@ const Sidebar = () => {
                     <li>
                         <Link className={sidebarStyles.navItem} activeClassName={sidebarStyles.activeNavItem} to='/'>
                             Home
+                        </Link>
+                    </li>
+                    <li>
+                        <Link className={sidebarStyles.navItem} activeClassName={sidebarStyles.activeNavItem} to='/research'>
+                            Research
                         </Link>
                     </li>
                     <li>

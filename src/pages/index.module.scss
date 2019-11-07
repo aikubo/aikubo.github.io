@@ -12,6 +12,15 @@
     flex-grow: 1;
     width: 50%;
     display: inline-block;
+    text-decoration: none;
+}
+
+.content p {
+    margin: 0rem;
+}
+
+.container .tagline {
+    margin-bottom: 1rem;
 }
 
 .picture {
