@@ -8,6 +8,7 @@ export const query = graphql`
             frontmatter {
                 title
                 advisor
+                imagePath
             }
             html
         }

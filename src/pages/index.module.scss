@@ -3,7 +3,6 @@
     align-items: center;
     flex-grow: 1;
     padding-top: 6.5rem;
-
 }
 
 .container p {
@@ -20,8 +19,17 @@
     margin: 0rem;
 }
 
+.content p a {
+    text-decoration: none;
+    color: #4169E1;
+}
+
 .container .tagline {
     margin-bottom: 1rem;
+}
+
+.container .github {
+    margin-top: 1rem;
 }
 
 .picture {
