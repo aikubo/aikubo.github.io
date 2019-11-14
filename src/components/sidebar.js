@@ -16,32 +16,33 @@ const Sidebar = () => {
       }`)
     return (
         <header className={sidebarStyles.sidebar}>
-                        <Img fluid={data.image.childImageSharp.fluid} alt="UO Logo." />
-
-            <h1>
-                <Link className={sidebarStyles.title}>
-                    Allison Kubo
-                </Link>
-            </h1>
-            <nav>
-                <ul className={sidebarStyles.navList}>
-                    <li>
-                        <Link className={sidebarStyles.navItem} activeClassName={sidebarStyles.activeNavItem} to='/research'>
-                            Research
-                        </Link>
-                    </li>
-                    <li>
-                        <Link className={sidebarStyles.navItem} activeClassName={sidebarStyles.activeNavItem} to='/log'>
-                            Log
-                        </Link>
-                    </li>
-                    <li>
-                        <Link className={sidebarStyles.navItem} activeClassName={sidebarStyles.activeNavItem} to='/resume'>
-                            Resume
-                        </Link>
-                    </li>
-                </ul>
-            </nav>
+            <div className={sidebarStyles.logo}>
+                <Img fluid={data.image.childImageSharp.fluid} alt="UO Logo." />
+            </div>
+            <div className={sidebarStyles.content}>
+                <h1>
+                    <Link className={sidebarStyles.title}>Allison Kubo</Link>
+                </h1>
+                <nav>
+                    <ul className={sidebarStyles.navList}>
+                        <li>
+                            <Link className={sidebarStyles.navItem} activeClassName={sidebarStyles.activeNavItem} to='/research'>
+                                Research
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className={sidebarStyles.navItem} activeClassName={sidebarStyles.activeNavItem} to='/log'>
+                                Log
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className={sidebarStyles.navItem} activeClassName={sidebarStyles.activeNavItem} to='/resume'>
+                                Resume
+                            </Link>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
     )
 }

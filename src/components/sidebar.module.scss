@@ -34,18 +34,28 @@
     color: #333333;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 750px) {
     .sidebar {
         position: static;
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        padding-bottom: 0rem;
         padding-left: 0rem;
+    }
+    .logo {
+        display: inline-block;
+        width: 50%;
+        padding-right: 0.75rem;
+    }
+    .content {
+        display: inline-block;
+        width: 50%;
     }
     .title {
         display: flex;
     }
     .nav-list {
         display: flex;
-    }
-    .nav-item {
-        display: inline;
     }
 }
