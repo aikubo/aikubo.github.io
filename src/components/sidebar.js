@@ -6,7 +6,7 @@ import sidebarStyles from './sidebar.module.scss'
 const Sidebar = () => {
     const data = useStaticQuery(graphql`
     query UOQuery {
-        image: file(relativePath: {eq: "images/uo.png"}) {
+        image: file(relativePath: {eq: "images/UOSignature-STK-BAR-BLK.png"}) {
           childImageSharp {
             fluid {
                 ...GatsbyImageSharpFluid

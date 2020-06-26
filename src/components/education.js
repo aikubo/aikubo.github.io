@@ -48,5 +48,5 @@ const Education = () => {
 
 }
 //{edge.node.frontmatter.organization} {edge.node.frontmatter.role}, {edge.node.frontmatter.date} {edge.node.frontmatter.order} {edge.node.frontmatter.amount}
-
+// use line 40 to open md as html
 export default Education

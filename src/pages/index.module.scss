@@ -2,7 +2,20 @@
     display: flex;
     align-items: center;
     flex-grow: 1;
-    padding-top: 6.5rem;
+    padding-top: 4rem;
+}
+
+.email {
+    color: blue;
+}
+
+.myname {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    padding-top: 4.1rem;
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .container p {
