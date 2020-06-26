@@ -26,6 +26,11 @@ const Sidebar = () => {
                 <nav>
                     <ul className={sidebarStyles.navList}>
                         <li>
+                            <Link className={sidebarStyles.navItem} activeClassName={sidebarStyles.activeNavItem} to='/resume'>
+                                CV
+                            </Link>
+                        </li>
+                        <li>
                             <Link className={sidebarStyles.navItem} activeClassName={sidebarStyles.activeNavItem} to='/research'>
                                 Research
                             </Link>
@@ -35,11 +40,7 @@ const Sidebar = () => {
                                 Log
                             </Link>
                         </li>
-                        <li>
-                            <Link className={sidebarStyles.navItem} activeClassName={sidebarStyles.activeNavItem} to='/resume'>
-                                Resume
-                            </Link>
-                        </li>
+
                     </ul>
                 </nav>
             </div>

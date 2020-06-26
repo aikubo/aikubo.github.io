@@ -4,6 +4,7 @@ import { graphql, useStaticQuery, Link } from 'gatsby'
 import resumeStyles from './resume.module.scss'
 import Awards from '../components/awards'
 import Outreach from '../components/outreach'
+import Education from '../components/education'
 
 const ResumePage = () => {
     const expr = useStaticQuery(graphql`
@@ -40,8 +41,10 @@ const ResumePage = () => {
 
     return (
         <Layout>
-            <h1>Resume</h1>
+            
+            <h1>CV</h1>
             <hr />
+            <Education />
             <h2 className={resumeStyles.subtitle}>Research Experience</h2>
             <ol className={resumeStyles.items}>
                 {expr.allMarkdownRemark.edges.map((edge) => {

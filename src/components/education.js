@@ -1,16 +1,16 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
-import awardStyles from './awards.module.scss'
+import EducationStyles from './education.module.scss'
 
-const Awards = () => {
-    const award = useStaticQuery(graphql`
+const Education = () => {
+    const Education = useStaticQuery(graphql`
         query {
             allMarkdownRemark (
                 sort: { order: ASC, fields: [frontmatter___order] }
                 filter: {
                     frontmatter: {
                         sourcetype: {
-                            eq: "resumeAwards"
+                            eq: "resumeEducation"
                         }
                     }
                 }) {
@@ -24,6 +24,7 @@ const Awards = () => {
                             order
                             amount
                         }
+                        html
                     }
                 }
             }
@@ -31,13 +32,13 @@ const Awards = () => {
     `)
     return (
         <div>
-            <h2 className={awardStyles.subtitle}>Awards and Grants</h2>
-            <ol className={awardStyles.items}>
-                {award.allMarkdownRemark.edges.map((edge) => {
+            <h2 className={EducationStyles.subtitle}>Education</h2>
+            <ol className={EducationStyles.items}>
+                {Education.allMarkdownRemark.edges.map((edge) => {
                     return (
-                    <li className={awardStyles.item}>
-                        <div className={awardStyles.head}>
-                            {edge.node.frontmatter.organization} {edge.node.frontmatter.role}, {edge.node.frontmatter.date} 
+                    <li className={EducationStyles.item}>
+                        <div dangerouslySetInnerHTML={{__html: edge.node.html}}>
+                           
                         </div>
                     </li>
                     )})}
@@ -46,5 +47,6 @@ const Awards = () => {
     )
 
 }
+//{edge.node.frontmatter.organization} {edge.node.frontmatter.role}, {edge.node.frontmatter.date} {edge.node.frontmatter.order} {edge.node.frontmatter.amount}
 
-export default Awards
+export default Education
