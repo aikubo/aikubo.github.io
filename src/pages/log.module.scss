@@ -1,5 +1,10 @@
+.toptitle{
+    font-size: xxx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+}
 .posts {
-    list-style-type: none;
+    list-style: none;
     margin: 0;
 }
 
@@ -12,6 +17,7 @@
         display: block;
         padding: 1rem;
         text-decoration: none;
+        font-size: 1rem;
     }
 
     a:hover {

@@ -32,7 +32,7 @@ const LogPage = () => {
 
     return (
         <Layout>
-            <h1>Log</h1>
+            <h1 className={logStyles.toptitle}>Log</h1>
             <hr />
             <ol className={logStyles.posts}>
                 {data.allMarkdownRemark.edges.map((edge) => {

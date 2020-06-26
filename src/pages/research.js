@@ -32,7 +32,7 @@ const ResearchPage = () => {
 
     return (
         <Layout>
-            <h1>Research</h1>
+            <h1 className={researchStyles.toptitle}>Research</h1>
             <hr />
             <ol className={researchStyles.items}>
                 {data.allMarkdownRemark.edges.map((edge) => {

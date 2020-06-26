@@ -42,7 +42,7 @@ const ResumePage = () => {
     return (
         <Layout>
             
-            <h1>CV</h1>
+            <h1 className={resumeStyles.toptitle}>CV</h1>
             <hr />
             <Education />
             <h2 className={resumeStyles.subtitle}>Research Experience</h2>
