@@ -3,14 +3,19 @@ import Layout from '../components/layout'
 import { graphql, StaticQuery } from 'gatsby'
 import logStyles from './log.module.scss'
 import { Link } from 'gatsby'
-import Tags from "../components/tags"
+import { slugify } from "../../util/utilfunc"
 //import logCard from '../components/logCard'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Container, Card, Button } from 'react-bootstrap'
+import { Badge, Card, Col, Row } from 'react-bootstrap'
 
 const LogPage = () => (
     <Layout>
         <h1 className={logStyles.toptitle}>Log</h1>
+    <Row>
+
+    
+    <Col>
+
     <StaticQuery 
         query={logQuery} 
         render={data => {
@@ -18,21 +23,45 @@ const LogPage = () => (
                 <div>
                     {data.allMarkdownRemark.edges.map(({node}) => (
                         
-                        <Container>
                             <Card>  
-                                <Card.Header>{node.frontmatter.date}</Card.Header>
-                                <Card.Title> {node.frontmatter.title} </Card.Title>
-                                <Tags>{node.frontmatter.tags}</Tags>
-                                <Link to={node.frontmatter.path} className="btn btn-outline-secondary btn-sm">Read More</Link>
+                                
+                                <Card.Title className={logStyles.title}> {node.frontmatter.title} </Card.Title>
+                                <Card.Subtitle className={logStyles.date}>
+
+                                    {node.frontmatter.date}
+                                    <div >
+                                    {node.frontmatter.tags.map(tag => (
+                                        <Link to={`/tags/${slugify(tag)}`}> 
+                                            <Badge variant="dark" className={logStyles.tags}>{tag}</Badge>{'  '}
+                                        </Link>
+                                    ))}
+                                    </div>
+                                    </Card.Subtitle>
+                                
+                                <Card.Body>
+
+                                    {node.excerpt}
+                                
+                                </Card.Body>
+
+                                <Link to={`/log/${node.fields.slug}`} className="btn btn-outline-secondary btn-sm float right text-uppercase">Read More</Link>
+
                             </Card>
                             
-                        </Container>
+                        //</Container>
                     ))}
                 </div>
         )
     }}
     />
-   
+    </Col>
+    <Col md = "2" >
+
+        
+    
+    </Col>
+
+   </Row>
  </Layout>
 )
 
@@ -49,10 +78,13 @@ const logQuery = graphql`
         ) {
             edges {
                 node {
+                    excerpt(format: MARKDOWN)
                     frontmatter {
                         title
                         date
                         tags
+                        
+                    
                     }
                     fields {
                         slug
@@ -62,4 +94,6 @@ const logQuery = graphql`
         }
     }
 `
+
+
 export default LogPage

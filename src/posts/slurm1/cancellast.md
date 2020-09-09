@@ -4,6 +4,7 @@ date: "2020-08-18"
 sourcetype: "log"
 imagePath: "src/posts/slurm1"
 tags: ["slurm", "linux", "hpc"]
+excerpt: scancel $(squeue -u username -h --format="%.15A" | sort -r | head -n1)
 ---
 
 TDLR; 

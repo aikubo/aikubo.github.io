@@ -46,16 +46,10 @@
 }
 
 .tags{
-    a {
-    font-size: medium;
-    font-family: sans-serif;
-    color:  #b52626;
+    padding:  10px;
+    display: inline-flex;
     font-variant: small-caps;
-    background:"grey"
-    }
+    list-style: none ;
 
-    a:hover{
-        background: #e4e4e4;
-    }
 
 }
