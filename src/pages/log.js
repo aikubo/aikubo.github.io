@@ -48,7 +48,7 @@ const LogPage = () => {
                               marginBottom: '20px',
                             }}
                           >
-                            <Link style={{ boxShadow: `none` }} to={edge.node.fields.slug}>
+                            <Link style={{ boxShadow: `none` }} to={`/log/${edge.node.fields.slug}`}>
                               {title}
                             </Link>
                           </h3>
