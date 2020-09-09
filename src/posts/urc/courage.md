@@ -3,11 +3,11 @@ title: "A True Recount of Courage's First Days"
 date: "2017-06-30"
 sourcetype: "log"
 imagePath: "src/posts/urc"
+tags: ["planetaryScience", "writing"]
 ---
 
 ![Courage](./urc/courage.jpg)
 
-luna
 by Allison Kubo, Yonder Dynamics Instruments Lead
 
 

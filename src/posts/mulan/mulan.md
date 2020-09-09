@@ -3,10 +3,13 @@ title: "Physics of Mulan's Snow Avalanche (Part 1)"
 date: "2020-09-7"
 sourcetype: "log"
 imagePath: "src/posts/mulan"
+tags: ["multiphase", "fun", "writing"]
 ---
 In "honor" of the recent Mulan remake, I present to you my analysis of the Mulan snow avalance scene. We will look at the physics of snow avalanches and make some simple deductions from the scene. 
 
-Snow avalanches are complex multiphase hazards. They are multiphase since they can incorportate ice, water, and air. It gets complicated when snow acts both as a fluid and a solid as it flows. It is difficult to comment on the multiphase aspects of the hun-destroying snow avalanche since it is an animated film. But we will do our best to put some numbers on this. 
+Snow avalanches are a type of [gravity current](https://en.wikipedia.org/wiki/Gravity_current), a fluid which flows due to it negative buoyancy. Snow avalanches are complex multiphase hazards. They are multiphase since they can incorportate ice, water, and air. It gets complicated when snow acts both as a fluid and a solid as it flows.
+
+It is difficult to comment on the multiphase aspects of the hun-destroying snow avalanche since it is an animated film. But we will do our best to put some numbers on this. 
 
 ![Mulan](./mulanexpression.gif)
 

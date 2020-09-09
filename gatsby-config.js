@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Allison Kubo',
+    title: 'Allison Kubo Hutchison',
     author: 'Kirk Hutchison'
   },
   plugins: [

@@ -3,6 +3,7 @@ title: "Globus tcllib not found Error"
 date: "2020-07-2"
 sourcetype: "log"
 imagePath: "src/posts/globus"
+tags: ["linux", "ErrorOfTheWeek", "globus"]
 ---
 
 ## Error of the Week

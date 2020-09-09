@@ -42,20 +42,19 @@ const LogPage = () => {
                     const tags = edge.node.frontmatter.tags
                     return (
                       <article key={edge.node.fields.slug}>
-                        <header>
-                          <h3
-                            style={{
-                              marginBottom: '20px',
-                            }}
-                          >
-                            <Link style={{ boxShadow: `none` }} to={`/log/${edge.node.fields.slug}`}>
-                              {title}
+                        <li className={logStyles.post}>
+                            <Link to={`/log/${edge.node.fields.slug}`}>
+                                <li className={logStyles.title}>
+                                    {title}
+                                </li>
+                                <h2>
+                                    <small>{edge.node.frontmatter.date}</small>
+                                    {tags && tags.length > 0 ? ` - ` : ``}
+                                    <Tags>{tags}</Tags>
+                                </h2>
+                                
                             </Link>
-                          </h3>
-                          <small>{edge.node.frontmatter.date}</small>
-                          {tags && tags.length > 0 ? ` - ` : ``}
-                          <Tags>{tags}</Tags>
-                        </header>
+
                         {/* <section>
                           <p
                             dangerouslySetInnerHTML={{
@@ -63,7 +62,9 @@ const LogPage = () => {
                             }}
                           />
                         </section> */}
+                        </li>
                       </article>
+                      
                     )
                  })}
                           

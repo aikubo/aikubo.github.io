@@ -1,4 +1,6 @@
 import React from "react"
+import logStyles from "../pages/log.module.scss"
+
 // Makes the tags into little grey blocks
 // to be displayed on the ./log page
 const Tags = ({ children }) =>
@@ -10,8 +12,9 @@ const Tags = ({ children }) =>
           style={{
             borderRadius: `4px`,
             border: `1px solid grey`,
-            padding: `2px 6px`,
-            marginRight: `5px`,
+            padding: `2px 8px`,
+            marginRight: `2px`,
+            marginBottom: `2px`,
             fontSize: `80%`,
             backgroundColor: "grey",
             color: "white",

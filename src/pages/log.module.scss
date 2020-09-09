@@ -6,13 +6,19 @@
 .posts {
     list-style: none;
     margin: 0;
+    font-size:.8rem
 }
-
+.title{
+    font-size: large;
+    font-family: sans-serif;
+    color:  #000000;
+    font-variant: small-caps;
+}
 .post {
     margin: 1rem 0;
 
     a {
-        background: #f4f4f4;
+        background: "white";
         color: #000000;
         display: block;
         padding: 1rem;
@@ -26,6 +32,10 @@
 
     h2 {
         margin-bottom: 0;
+        font-size: large;
+        font-family: sans-serif;
+        color:  #000000;
+
     }
 
     p {
@@ -33,4 +43,19 @@
         font-size: .8rem;
         font-style: italic;
     }
+}
+
+.tags{
+    a {
+    font-size: medium;
+    font-family: sans-serif;
+    color:  #b52626;
+    font-variant: small-caps;
+    background:"grey"
+    }
+
+    a:hover{
+        background: #e4e4e4;
+    }
+
 }
