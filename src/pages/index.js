@@ -18,6 +18,7 @@ const IndexPage = () => {
 
     return (
         <Layout>
+          <meta name="google-site-verification" content="2zEMvmyykFOHf97jePN6rgsqb_LQLW8ITZ9Lnkf4YBk" />
             <p className={indexStyles.myname}> Allison Kubo Hutchison</p>
             <div className={indexStyles.container}>
                 <div className={indexStyles.picture}><Img fluid={data.image.childImageSharp.fluid} alt="Hello, I am Allison." /></div>

@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Allison Kubo Hutchison',
-    author: 'Kirk Hutchison'
+    author: 'Kirk Hutchison and Allison Kubo Hutchison',
+    siteUrl: 'http://www.allisonkubo.com/'
   },
   plugins: [
     'gatsby-plugin-sass',
@@ -29,7 +30,7 @@ module.exports = {
           `gatsby-remark-copy-linked-files`,
           { resolve: `gatsby-plugin-sitemap`,
           options:{
-            output: `/src/components/sitemap.xml`
+            output: `./src/components/sitemap.xml`
             
           }}
         ]
