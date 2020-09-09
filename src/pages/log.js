@@ -7,15 +7,14 @@ import { slugify } from "../../util/utilfunc"
 //import logCard from '../components/logCard'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Badge, Card, Col, Row } from 'react-bootstrap'
+import kebabCase from 'lodash/kebabCase'
 
 const LogPage = () => (
     <Layout>
-        <h1 className={logStyles.toptitle}>Log</h1>
+        <h1 className={logStyles.toptitle}>Log</h1> <Link to='/tags/' className={logStyles.topics}>Topics</Link>
     <Row>
-
     
     <Col>
-
     <StaticQuery 
         query={logQuery} 
         render={data => {
@@ -25,13 +24,16 @@ const LogPage = () => (
                         
                             <Card>  
                                 
-                                <Card.Title className={logStyles.title}> {node.frontmatter.title} </Card.Title>
+                                <Link to={`/log/${node.fields.slug}`}>
+                                    <Card.Title className={logStyles.title}> {node.frontmatter.title} </Card.Title>
+                                </Link>
+
                                 <Card.Subtitle className={logStyles.date}>
 
                                     {node.frontmatter.date}
                                     <div >
                                     {node.frontmatter.tags.map(tag => (
-                                        <Link to={`/tags/${slugify(tag)}`}> 
+                                        <Link to={`/tags/${kebabCase(tag)}`}> 
                                             <Badge variant="dark" className={logStyles.tags}>{tag}</Badge>{'  '}
                                         </Link>
                                     ))}
@@ -55,12 +57,6 @@ const LogPage = () => (
     }}
     />
     </Col>
-    <Col md = "2" >
-
-        
-    
-    </Col>
-
    </Row>
  </Layout>
 )

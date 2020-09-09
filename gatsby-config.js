@@ -26,7 +26,12 @@ module.exports = {
               linkImagesToOriginal: false
             }
           },
-          `gatsby-remark-copy-linked-files`
+          `gatsby-remark-copy-linked-files`,
+          { resolve: `gatsby-plugin-sitemap`,
+          options:{
+            output: `/src/components/sitemap.xml`
+            
+          }}
         ]
       }
     }
