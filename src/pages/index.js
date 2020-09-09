@@ -7,7 +7,7 @@ import indexStyles from './index.module.scss'
 const IndexPage = () => {
     const data = useStaticQuery(graphql`
     query MyQuery {
-        image: file(relativePath: {eq: "images/allieMSH.JPG"}) {
+        image: file(relativePath: {eq: "images/allieMSHgray.JPG"}) {
           childImageSharp {
             fluid {
                 ...GatsbyImageSharpFluid
@@ -20,7 +20,7 @@ const IndexPage = () => {
         <Layout>
             <p className={indexStyles.myname}> Allison Kubo Hutchison</p>
             <div className={indexStyles.container}>
-                <div className={indexStyles.picture}><Img fluid={data.image.childImageSharp.fluid} alt="A picture of Allison." /></div>
+                <div className={indexStyles.picture}><Img fluid={data.image.childImageSharp.fluid} alt="Hello, I am Allison." /></div>
                 <div className={indexStyles.content}>
                   <p className={indexStyles.tagline}> <i>I use computational models to explore fluids produced by volcanoes. </i> </p>
                   <p>Ph.D. Candidate at the University of Oregon</p>
@@ -28,7 +28,8 @@ const IndexPage = () => {
                   <p className={indexStyles.github}>Check out my work on <a href="https://github.com/aikubo" target="_blank" rel="noopener noreferrer">Github</a>.</p>
                   
                   <p className={indexStyles.email}><a href="mailto:akubo@uoregon.edu">akubo@uoregon.edu </a> </p>
-
+                
+                                
                   
                   
                 </div>

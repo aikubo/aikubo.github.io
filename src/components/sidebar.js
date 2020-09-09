@@ -17,11 +17,13 @@ const Sidebar = () => {
     return (
         <header className={sidebarStyles.sidebar}>
             <div className={sidebarStyles.logo}>
-                <Img fluid={data.image.childImageSharp.fluid} alt="UO Logo." />
+                <a href="https://www.uoregon.edu/">
+                    <Img fluid={data.image.childImageSharp.fluid} alt="UO Logo." />
+                </a>
             </div>
             <div className={sidebarStyles.content}>
                 <h1>
-                    <Link className={sidebarStyles.title}>Allison Kubo</Link>
+                    <Link className={sidebarStyles.title}>Allison Kubo Hutchison</Link>
                 </h1>
                 <nav>
                     <ul className={sidebarStyles.navList}>
