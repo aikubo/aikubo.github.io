@@ -4,6 +4,7 @@ date: "2020-09-7"
 sourcetype: "log"
 imagePath: "src/posts/mulan"
 tags: ["multiphase", "fun", "writing"]
+image: ./mountain2_annotated.png
 ---
 In "honor" of the recent Mulan remake, I present to you my analysis of the Mulan snow avalance scene. We will look at the physics of snow avalanches and make some simple deductions from the scene. 
 

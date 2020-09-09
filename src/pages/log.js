@@ -1,76 +1,65 @@
 import React from 'react' 
 import Layout from '../components/layout'
-import { Link, graphql, useStaticQuery } from 'gatsby'
+import { graphql, StaticQuery } from 'gatsby'
 import logStyles from './log.module.scss'
+import { Link } from 'gatsby'
 import Tags from "../components/tags"
+//import logCard from '../components/logCard'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { Container, Card, Button } from 'react-bootstrap'
 
-const LogPage = () => {
-    const data = useStaticQuery(graphql`
-        query {
-            allMarkdownRemark (
-                filter: {
-                    frontmatter: {
-                        sourcetype: {
-                            eq: "log"
-                        }
+const LogPage = () => (
+    <Layout>
+        <h1 className={logStyles.toptitle}>Log</h1>
+    <StaticQuery 
+        query={logQuery} 
+        render={data => {
+            return(
+                <div>
+                    {data.allMarkdownRemark.edges.map(({node}) => (
+                        
+                        <Container>
+                            <Card>  
+                                <Card.Header>{node.frontmatter.date}</Card.Header>
+                                <Card.Title> {node.frontmatter.title} </Card.Title>
+                                <Tags>{node.frontmatter.tags}</Tags>
+                                <Link to={node.frontmatter.path} className="btn btn-outline-secondary btn-sm">Read More</Link>
+                            </Card>
+                            
+                        </Container>
+                    ))}
+                </div>
+        )
+    }}
+    />
+   
+ </Layout>
+)
+
+const logQuery = graphql`
+    query {
+        allMarkdownRemark ( sort: {fields: [frontmatter___date], order: DESC}
+            filter: {
+                frontmatter: {
+                    sourcetype: {
+                        eq: "log"
                     }
                 }
-            ) {
-                edges {
-                    node {
-                        frontmatter {
-                            title
-                            date
-                            tags
-                        }
-                        fields {
-                            slug
-                        }
+            }
+        ) {
+            edges {
+                node {
+                    frontmatter {
+                        title
+                        date
+                        tags
+                    }
+                    fields {
+                        slug
                     }
                 }
             }
         }
-    `)
-
-    return (
-        <Layout>
-            <h1 className={logStyles.toptitle}>Log</h1>
-            <hr />
-            <ol className={logStyles.posts}>
-                {data.allMarkdownRemark.edges.map((edge) => {
-                    const title = edge.node.frontmatter.title || edge.node.fields.slug
-                    const tags = edge.node.frontmatter.tags
-                    return (
-                      <article key={edge.node.fields.slug}>
-                        <li className={logStyles.post}>
-                            <Link to={`/log/${edge.node.fields.slug}`}>
-                                <li className={logStyles.title}>
-                                    {title}
-                                </li>
-                                <h2>
-                                    <small>{edge.node.frontmatter.date}</small>
-                                    {tags && tags.length > 0 ? ` - ` : ``}
-                                    <Tags>{tags}</Tags>
-                                </h2>
-                                
-                            </Link>
-
-                        {/* <section>
-                          <p
-                            dangerouslySetInnerHTML={{
-                              __html: node.frontmatter.description || node.excerpt,
-                            }}
-                          />
-                        </section> */}
-                        </li>
-                      </article>
-                      
-                    )
-                 })}
-                          
-            </ol>
-        </Layout>
-    )
-}
-
+    }
+`
 export default LogPage

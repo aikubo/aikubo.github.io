@@ -6,7 +6,7 @@
 .posts {
     list-style: none;
     margin: 0;
-    font-size:.8rem
+    font-size:.5rem
 }
 .title{
     font-size: large;
@@ -15,19 +15,19 @@
     font-variant: small-caps;
 }
 .post {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
 
     a {
-        background: "white";
+        background: #e4e4e4 ;
         color: #000000;
         display: block;
-        padding: 1rem;
+        padding: .5rem;
         text-decoration: none;
         font-size: 1rem;
     }
 
     a:hover {
-        background: #e4e4e4;
+        background: #aeaeae;
     }
 
     h2 {

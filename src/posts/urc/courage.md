@@ -4,6 +4,7 @@ date: "2017-06-30"
 sourcetype: "log"
 imagePath: "src/posts/urc"
 tags: ["planetaryScience", "writing"]
+image: 
 ---
 
 ![Courage](./urc/courage.jpg)
