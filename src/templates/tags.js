@@ -25,7 +25,7 @@ const Tags = ({ pageContext, data }) => {
           const { title } = node.frontmatter
           return (
             <li key={slug}>
-              <Link to={slug} className={logStyles.title}>{title}</Link>
+              <Link to={node.frontmatter.path} className={logStyles.title}>{title}</Link>
             </li>
           )
         })}
@@ -103,6 +103,7 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
+            path
           }
         }
       }
