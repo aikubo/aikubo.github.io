@@ -17,9 +17,9 @@ const Sidebar = () => {
     return (
         <header className={sidebarStyles.sidebar}>
             <div className={sidebarStyles.logo}>
-                <a href="https://www.uoregon.edu/">
+                <Link to='/'>
                     <Img fluid={data.image.childImageSharp.fluid} alt="UO Logo." />
-                </a>
+                </Link>
             </div>
             <div className={sidebarStyles.content}>
                 <h1>

@@ -6,12 +6,26 @@ import { Link } from 'gatsby'
 import { slugify } from "../../util/utilfunc"
 //import logCard from '../components/logCard'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Badge, Card, Col, Row } from 'react-bootstrap'
+import { Badge, Card, Col, Row, Container } from 'react-bootstrap'
 import kebabCase from 'lodash/kebabCase'
 
 const LogPage = () => (
     <Layout>
-        <h1 className={logStyles.toptitle}>Log</h1> <Link to='/tags/' className={logStyles.topics}>Topics</Link>
+
+    <Row>
+        <Col md="8">
+        <h1 className={logStyles.toptitle}>Log</h1> 
+        </Col>
+        
+        <Col md ="2">
+        <Link to='/tags/' className={logStyles.topics}>
+            <h2>
+                <Badge variant="dark" className={logStyles.tags}>TOPICS</Badge>
+            </h2>
+        </Link>
+        </Col>
+        
+    </Row>
     <Row>
     
     <Col>
@@ -21,8 +35,11 @@ const LogPage = () => (
             return(
                 <div>
                     {data.allMarkdownRemark.edges.map(({node}) => (
-                        
-                            <Card>  
+                        <Container>
+                            <Card 
+                            border="light"                   
+                            style={{ width: '40rem' }}
+                            className="mb-3">  
                                 
                                 <Link to={`/log/${node.fields.slug}`}>
                                     <Card.Title className={logStyles.title}> {node.frontmatter.title} </Card.Title>
@@ -40,17 +57,18 @@ const LogPage = () => (
                                     </div>
                                     </Card.Subtitle>
                                 
-                                <Card.Body>
-
-                                    {node.excerpt}
-                                
+                                <Card.Body className={logStyles.excerpts}>
+                                    <p>
+                                     {node.excerpt}
+                                    </p>
+                                    
                                 </Card.Body>
 
                                 <Link to={`/log/${node.fields.slug}`} className="btn btn-outline-secondary btn-sm float right text-uppercase">Read More</Link>
 
                             </Card>
                             
-                        //</Container>
+                        </Container>
                     ))}
                 </div>
         )

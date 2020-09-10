@@ -4,6 +4,12 @@ import Layout from '../components/layout'
 import Img from 'gatsby-image'
 import indexStyles from './index.module.scss'
 
+
+import Helmet from 'react-helmet';
+
+
+
+
 const IndexPage = () => {
     const data = useStaticQuery(graphql`
     query MyQuery {
@@ -17,8 +23,9 @@ const IndexPage = () => {
       }`)
 
     return (
-        <Layout>
-          <meta name="google-site-verification" content="2zEMvmyykFOHf97jePN6rgsqb_LQLW8ITZ9Lnkf4YBk" />
+  
+        <Layout>   
+    
             <p className={indexStyles.myname}> Allison Kubo Hutchison</p>
             <div className={indexStyles.container}>
                 <div className={indexStyles.picture}><Img fluid={data.image.childImageSharp.fluid} alt="Hello, I am Allison." /></div>

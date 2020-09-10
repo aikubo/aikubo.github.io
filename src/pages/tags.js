@@ -8,7 +8,7 @@ import kebabCase from "lodash/kebabCase"
 import { Helmet } from "react-helmet"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
-
+import logStyles from "./log.module.scss"
 const TagsPage = ({
   
   data: {
@@ -22,7 +22,7 @@ const TagsPage = ({
   <div>
     <Helmet title={title} />
     <div>
-      <h1>Topics</h1>
+      <h1 className={ logStyles.toptitle}>Topics</h1>
       <ul>
         {group.map(tag => (
           <li key={tag.fieldValue}>
