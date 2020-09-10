@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-templates-tags-js","path":"/tags/hpc","result":{"pageContext":{"tag":"hpc"}},"staticQueryHashes":["2890141520","440568431"]}
+{"componentChunkName":"component---src-templates-tags-js","path":"/tags/hpc","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"cancellast"},"frontmatter":{"title":"Slurm Shortcuts: One Command to Cancel Last Submitted Job"}}}]}},"pageContext":{"tag":"hpc"}},"staticQueryHashes":["2890141520","440568431"]}

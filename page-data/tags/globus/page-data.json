@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-templates-tags-js","path":"/tags/globus","result":{"pageContext":{"tag":"globus"}},"staticQueryHashes":["2890141520","440568431"]}
+{"componentChunkName":"component---src-templates-tags-js","path":"/tags/globus","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"globuserr"},"frontmatter":{"title":"Globus tcllib not found Error"}}}]}},"pageContext":{"tag":"globus"}},"staticQueryHashes":["2890141520","440568431"]}

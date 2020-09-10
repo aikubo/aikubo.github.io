@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-templates-tags-js","path":"/tags/planetary-science","result":{"pageContext":{"tag":"planetaryScience"}},"staticQueryHashes":["2890141520","440568431"]}
+{"componentChunkName":"component---src-templates-tags-js","path":"/tags/planetary-science","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"courage"},"frontmatter":{"title":"A True Recount of Courage's First Days"}}}]}},"pageContext":{"tag":"planetaryScience"}},"staticQueryHashes":["2890141520","440568431"]}

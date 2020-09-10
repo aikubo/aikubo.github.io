@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-templates-tags-js","path":"/tags/gpu","result":{"pageContext":{"tag":"GPU"}},"staticQueryHashes":["2890141520","440568431"]}
+{"componentChunkName":"component---src-templates-tags-js","path":"/tags/gpu","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"pop-os"},"frontmatter":{"title":"Windows/Pop_OS! Dual Boot on the Razer Blade Stealth (Late 2019)"}}}]}},"pageContext":{"tag":"GPU"}},"staticQueryHashes":["2890141520","440568431"]}

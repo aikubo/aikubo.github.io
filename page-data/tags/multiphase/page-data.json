@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-templates-tags-js","path":"/tags/multiphase","result":{"pageContext":{"tag":"multiphase"}},"staticQueryHashes":["2890141520","440568431"]}
+{"componentChunkName":"component---src-templates-tags-js","path":"/tags/multiphase","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"mulan"},"frontmatter":{"title":"Physics of Mulan's Snow Avalanche (Part 1)"}}}]}},"pageContext":{"tag":"multiphase"}},"staticQueryHashes":["2890141520","440568431"]}
