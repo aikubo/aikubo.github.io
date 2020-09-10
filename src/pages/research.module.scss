@@ -11,7 +11,7 @@
 
 .item {
     margin: 1rem 0;
-
+    font-family: 'Roboto Slab', serif;
     a {
         background: #f4f4f4;
         color: #000000;
@@ -26,11 +26,15 @@
 
     h2 {
         margin-bottom: 0;
+        font-family: 'Roboto Slab', serif;
     }
 
     p {
+
+        margin-top: 50 px;
         color: #777777;
         font-size: .8rem;
         font-style: italic;
+        font-family: sans-serif;
     }
 }

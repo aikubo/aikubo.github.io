@@ -3,8 +3,6 @@ import Layout from '../components/layout'
 import { graphql, StaticQuery } from 'gatsby'
 import logStyles from './log.module.scss'
 import { Link } from 'gatsby'
-import { slugify } from "../../util/utilfunc"
-//import logCard from '../components/logCard'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Badge, Card, Col, Row, Container } from 'react-bootstrap'
 import kebabCase from 'lodash/kebabCase'
@@ -20,7 +18,7 @@ const LogPage = () => (
         <Col md ="2">
         <Link to='/tags/' className={logStyles.topics}>
             <h2>
-                <Badge variant="dark" className={logStyles.tags}>TOPICS</Badge>
+                <button size="sm">Topics</button>
             </h2>
         </Link>
         </Col>
@@ -39,7 +37,8 @@ const LogPage = () => (
                             <Card 
                             border="light"                   
                             style={{ width: '40rem' }}
-                            className="mb-3">  
+                            className={logStyles.card}
+                            >  
                                 
                                 <Link to={`/log/${node.fields.slug}`}>
                                     <Card.Title className={logStyles.title}> {node.frontmatter.title} </Card.Title>

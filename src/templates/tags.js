@@ -17,7 +17,7 @@ const Tags = ({ pageContext, data }) => {
   return (
       <Layout>
     <div>
-      <h1 className={ logStyles.toptitle}>{tagHeader}</h1>
+      <h1 >{tagHeader}</h1>
 
       <ul>
         {edges.map(({ node }) => {

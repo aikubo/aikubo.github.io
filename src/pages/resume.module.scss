@@ -6,6 +6,7 @@
   
 .subtitle {
     font-size: 1.5rem;
+    font-family: 'Roboto Slab';
 }
 
 .items {
@@ -36,19 +37,26 @@
 .head {
     margin-left: 0rem;
     margin-bottom: 0.5rem;
+    font-family: 'Noto San', sans-serif;
 
     h2 {
         margin-bottom: 0.5rem;
         font-size: 1.2rem;
+        font-family: 'Noto San', sans-serif;
+
     }
 
     h3 {
         margin-bottom: 0rem;
         font-style: italic;
         font-size: 1.2rem;
+        font-family: 'Noto San', sans-serif;
+
     }
 
     p {
         font-size: .8rem;
+        font-family: 'Noto San', sans-serif;
+
     }
 }

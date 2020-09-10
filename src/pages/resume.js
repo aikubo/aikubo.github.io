@@ -53,11 +53,8 @@ const ResumePage = () => {
                             <li>
                             <div className={resumeStyles.head}>
                                 <h2>
-                                    {edge.node.frontmatter.organization}
+                                    {edge.node.frontmatter.organization} - {edge.node.frontmatter.role}
                                 </h2>
-                                <h3>
-                                    {edge.node.frontmatter.role}
-                                </h3>
                                 <p>
                                     {edge.node.frontmatter.start} to {edge.node.frontmatter.finish}
                                 </p>
