@@ -6,7 +6,8 @@
 .posts {
     list-style: none;
     margin: 0;
-    font-size:.5rem
+    font-size:.5rem;
+    text-decoration: none;
 }
 
 
@@ -29,6 +30,7 @@
     font-size: large;
     font-family: 'Roboto Slab';
     color:  #000000;
+    text-decoration: none;
     a {
 
     }
@@ -41,7 +43,7 @@
 
 .topics{
     font-size: large;
-    font-family:  'Noto Sans', sans-serif;
+    font-family:  'Roboto Slab', serif;
     color:  #000000;
 }
 
@@ -52,6 +54,7 @@
 
 .post {
     margin: 0.5rem 0;
+    text-decoration: none;
 
     a {
         background: #e4e4e4 ;
@@ -87,6 +90,36 @@
     font-variant: small-caps;
     list-style: none ;
     font-family: 'Noto Sans', 'sans-serif';
+    text-decoration: none;
+
+
+}
+
+.logcontainer{
+    display: flex;
+    padding-left: 8rem;
+
+}
+
+.postTitle{
+    font-size: x-large;
+    font-family: 'Roboto Slab';
+    color:  #000000;
+    text-decoration: none;
+}
+
+@media(max-width: 1000px){
+    .toptitle{
+        padding-left: 8rem;
+    }
+    .topics{
+        padding-left: 8rem;
+        padding-right: 2rem;
+    }
+    .logcontainer{
+        padding-left: 8rem;
+        display: flex;
+    }
 
 
 }

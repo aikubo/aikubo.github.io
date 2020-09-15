@@ -23,7 +23,7 @@ const Sidebar = () => {
             </div>
             <div className={sidebarStyles.content}>
                 <h1>
-                    <Link className={sidebarStyles.title}>Allison Kubo Hutchison</Link>
+                    <Link to='/' className={sidebarStyles.title}>AKH</Link>
                 </h1>
                 <nav>
                     <ul className={sidebarStyles.navList}>

@@ -36,41 +36,35 @@ const LogPage = () => (
             return(
                 <div>
                     {data.allMarkdownRemark.edges.map(({node}) => (
-                        //<Container>
-                            <Card 
-                            border="light"                   
-                            style={{ width: '40rem' }}
-                            className={logStyles.card}
-                            >  
-                                
-                                <Link to={`/log/${node.fields.slug}`}>
-                                    <Card.Title className={logStyles.title}> {node.frontmatter.title} </Card.Title>
-                                </Link>
+                        <li className={logStyles.post}>
+                            <Link to={`/log/${node.fields.slug}`}>
 
-                                <Card.Subtitle className={logStyles.date}>
+                            </Link>
+                            <h1 className={logStyles.title}>
+                                    {node.frontmatter.title}
+                            </h1>
 
-                                    {node.frontmatter.date}
-                                    <div >
+                            <p className={logStyles.date}>
+                                {node.frontmatter.date}
+                            </p>
+
+                            <p>
+                            <div >
                                     {node.frontmatter.tags.map(tag => (
                                         <Link to={`/tags/${kebabCase(tag)}`}> 
                                             <Badge variant="dark" className={logStyles.tags}>{tag}</Badge>{'  '}
                                         </Link>
                                     ))}
-                                    </div>
-                                    </Card.Subtitle>
+                            </div>
+                            </p>
+
+                            <Link to={`/log/${node.fields.slug}`} className="btn btn-outline-secondary btn-sm float right text-uppercase">Read More</Link>
+
+
+
+
+                        </li>
                                 
-                                <Card.Body className={logStyles.excerpts}>
-                                    <p>
-                                     {node.excerpt}
-                                    </p>
-                                    
-                                </Card.Body>
-
-                                <Link to={`/log/${node.fields.slug}`} className="btn btn-outline-secondary btn-sm float right text-uppercase">Read More</Link>
-
-                            </Card>
-                            
-                        //</Container>
                     ))}
                 </div>
         )

@@ -5,7 +5,7 @@ import logStyles from '../pages/log.module.scss'
 // Components
 import { Link, graphql } from "gatsby"
 
-import { Badge, Card, Col, Row, Container } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap'
 
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext
@@ -25,7 +25,7 @@ const Tags = ({ pageContext, data }) => {
           const { title } = node.frontmatter
           return (
             <li key={slug}>
-              <Link to={node.frontmatter.path} className={logStyles.title}>{title}</Link>
+              <Link to={`/log/${slug}`} className={logStyles.title}>{title}</Link>
             </li>
           )
         })}
@@ -103,7 +103,6 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
-            path
           }
         }
       }

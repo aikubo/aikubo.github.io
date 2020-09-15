@@ -43,7 +43,7 @@
         margin-bottom: 0.5rem;
         font-size: 1.2rem;
         font-family: 'Noto San', sans-serif;
-
+        font-style: bold;
     }
 
     h3 {
@@ -51,12 +51,25 @@
         font-style: italic;
         font-size: 1.2rem;
         font-family: 'Noto San', sans-serif;
+        
 
     }
 
     p {
         font-size: .8rem;
         font-family: 'Noto San', sans-serif;
+        font-style: italic;
+    }
+}
 
+@media(max-width: 1000px){
+    .toptitle{
+        padding-left: 7rem;
+    }
+    .items{
+        padding-left: 7rem;
+    }
+    .subtitle{
+        padding-left: 7rem;
     }
 }

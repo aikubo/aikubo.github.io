@@ -54,21 +54,37 @@
     display: inline-block;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
     .container {
         display: block;
         padding-top: 0rem;
+        padding-left: 7rem;
+        align-items: center;
     }
     .container p {
         padding-top: 1rem;
         padding-left: 0rem;
+        align-items: center;
     }
     .content {
         display: block;
-        width: 100%;
+        width: 90%;
+        align-items: center;
+        padding-left: 0rem;
     }
     .picture {
         display: block;
-        width: 100%;
+        width: 90%;
+        align-items: center;
+        padding-left: 0rem;
     }
+    .myname{
+        align-items: center;
+        flex-grow: 1;
+        width: 90%;
+        padding-left: 0rem;
+        padding-left: 7rem;
+
+    }
+
 }

@@ -2,8 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import researchStyles from './research.module.scss'
-import { Badge, Card, Col, Row, Container } from 'react-bootstrap'
-
+import container from '../styles/pageStyle.scss'
 
 const ResearchPage = () => {
     const data = useStaticQuery(graphql`
