@@ -1,16 +1,11 @@
-.sidebar {
-
-    padding-top: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    max-width: 20%;
+.content{
+    max-width:  100%;
+    background: rgb(0, 0, 0);
   }
 
-.container{
-    background-color: aqua;
-}
+
   .title {
-    color: #000000;
+    color: #ffffff;
     font-size: 1rem;
     text-decoration: none;
     font-family: Georgia, serif;
@@ -23,6 +18,8 @@
     list-style-type: none;
     margin: 0;
     padding-right: 1rem;
+    display: inline-flex;
+
 }
 
 .nav-item {
@@ -34,13 +31,12 @@
 }
 
 .nav-item:hover {
-    color: #000000;
-    background: #d3d1d1;
+    color: #939393;
     text-decoration: none;
 }
 
 .active-nav-item {
-    color: #333333;
+    color: #474747;
 }
 
 .logo {

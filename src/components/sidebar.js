@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 import sidebarStyles from './sidebar.module.scss'
+import Container from 'react-bootstrap/Container'
 
 const Sidebar = () => {
     const data = useStaticQuery(graphql`
@@ -15,7 +16,7 @@ const Sidebar = () => {
         }
       }`)
     return (
-        <header className={sidebarStyles.sidebar}>
+        <header>
             <div className={sidebarStyles.logo}>
                 <Link to='/'>
                     <Img fluid={data.image.childImageSharp.fluid} alt="UO Logo." />

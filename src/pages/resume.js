@@ -42,10 +42,9 @@ const ResumePage = () => {
     return (
         <Layout>
             
-            <h1 className={resumeStyles.toptitle}>CV</h1>
-            <hr />
             <Education />
-            <h2 className={resumeStyles.subtitle}>Research Experience</h2>
+            <br/>
+            <h2 className={resumeStyles.subtitle}>Experience</h2>
             <ol className={resumeStyles.items}>
                 {expr.allMarkdownRemark.edges.map((edge) => {
                     return (

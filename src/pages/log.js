@@ -6,30 +6,12 @@ import { Link } from 'gatsby'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Badge, Card, Col, Row, Container } from 'react-bootstrap'
 import kebabCase from 'lodash/kebabCase'
-import container from '../styles/pageStyle.scss'
 
 const LogPage = () => (
     <Layout>
-        <container>
-    <Row>
-        
-        <Col md="8">
-        <h1 className={logStyles.toptitle}>Log</h1> 
-        </Col>
-        
-        <Col md ="2">
-        <Link to='/tags/' className={logStyles.topics}>
-                <button size="sm">topics</button>
-        </Link>
-        </Col>
-        
 
-       
-
-    </Row>
     <Row>
-    
-    <Col>
+    <Col className={logStyles.col}>
     <StaticQuery 
         query={logQuery} 
         render={data => {
@@ -39,7 +21,7 @@ const LogPage = () => (
                         //<Container>
                             <Card 
                             border="light"                   
-                            style={{ width: '40rem' }}
+                            
                             className={logStyles.card}
                             >  
                                 
@@ -78,7 +60,6 @@ const LogPage = () => (
     />
     </Col>
    </Row>
-   </container>
  </Layout>
 )
 

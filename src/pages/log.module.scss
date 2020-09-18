@@ -1,11 +1,16 @@
 .toptitle{
-    font-size: xxx-large;
+    font-size: 4rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-variant: small-caps;
+    margin-right: 6rem;
+}
+
+.top{
+    display: inline-flex;
 }
 .posts {
     list-style: none;
-    margin: 0;
+    margin: 1rem 1rem;
     font-size:.5rem;
     text-decoration: none;
 }
@@ -14,24 +19,34 @@
 .excerpts {
     list-style: none;
     margin: 0;
-    font-size:large;
+    font-size:1rem;
     color: #777777
 
 }
 
 .card{
     list-style: none;
-    background: #777777
+    background: #777777;
+    display: flex;
+    position: relative;
+    padding-top: 1rem;
 
 }
 
+.col{
+    display: flex;
+    position: relative;
+    width: 80%;
+
+}
 
 .title{
-    font-size: large;
-    font-family: 'Roboto Slab';
-    color:  #000000;
-    text-decoration: none;
+
     a {
+        font-size: 3rem;
+        font-family: 'Roboto Slab';
+        color:  #000000;
+        text-decoration: none;
 
     }
 
@@ -42,18 +57,20 @@
 }
 
 .topics{
-    font-size: large;
-    font-family:  'Roboto Slab', serif;
+    font-size: 2rem;
+    font-family:  Helvetica,sans-serif;
     color:  #000000;
+    text-decoration: none;
 }
 
 .date{
     color:  #777777;
     font-family: 'Noto Sans', sans-serif;
+    font-size: 0.7rem;
 }
 
 .post {
-    margin: 0.5rem 0;
+    margin: 0.5rem 0.5rem;
     text-decoration: none;
 
     a {
@@ -91,35 +108,14 @@
     list-style: none ;
     font-family: 'Noto Sans', 'sans-serif';
     text-decoration: none;
+    font-size: 0.5rem;
 
 
 }
 
 .logcontainer{
     display: flex;
-    padding-left: 8rem;
-
-}
-
-.postTitle{
-    font-size: x-large;
-    font-family: 'Roboto Slab';
-    color:  #000000;
-    text-decoration: none;
-}
-
-@media(max-width: 1000px){
-    .toptitle{
-        padding-left: 8rem;
-    }
-    .topics{
-        padding-left: 8rem;
-        padding-right: 2rem;
-    }
-    .logcontainer{
-        padding-left: 8rem;
-        display: flex;
-    }
-
+    position: relative;
+    width: 80%
 
 }

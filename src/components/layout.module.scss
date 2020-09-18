@@ -1,8 +1,5 @@
 .container {
     margin: 0 auto;
-    max-width: 750px;
-    padding: 1rem;
-
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -10,5 +7,37 @@
 
 .content {
     flex-grow: 1;
+    margin-left: 80px; 
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+.Sidebar{
+    background-color: chartreuse;
+    
 }
 
+.Topbar{
+    width: 100%;
+    
+}
+
+#sidebar-wrapper{
+    min-height: 100vh !important;
+    width: 100vw;
+    margin-left: -1rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+}

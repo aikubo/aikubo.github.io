@@ -2,7 +2,7 @@
 sourcetype: "resumeAwards"
 organization: "GLADE"
 role: "REU"
-order: "5"
+order: "6"
 date: "2017"
 amount: "$8,000"
 ---

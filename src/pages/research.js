@@ -35,8 +35,7 @@ const ResearchPage = () => {
 
     return (
         <Layout>
-            <h1 className={researchStyles.toptitle}>Research</h1>
-            <hr />
+
             <ol className={researchStyles.items}>
 
 
@@ -44,9 +43,9 @@ const ResearchPage = () => {
                     return (
                         <li className={researchStyles.item}>
                             <Link to={`/research/${edge.node.fields.slug}`}>
-                                <h2>
+                                <h3>
                                     {edge.node.frontmatter.title}
-                                </h2>
+                                </h3>
                                 <p>
                                     {edge.node.excerpt}
                                 </p>

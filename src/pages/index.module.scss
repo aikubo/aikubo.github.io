@@ -57,8 +57,6 @@
 @media (max-width: 1000px) {
     .container {
         display: block;
-        padding-top: 0rem;
-        padding-left: 7rem;
         align-items: center;
     }
     .container p {
@@ -83,8 +81,7 @@
         flex-grow: 1;
         width: 90%;
         padding-left: 0rem;
-        padding-left: 7rem;
-
+        font-size: 2rem;
     }
 
 }
