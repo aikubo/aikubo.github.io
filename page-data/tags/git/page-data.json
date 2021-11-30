@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-templates-tags-js","path":"/tags/git","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"lfs"},"frontmatter":{"title":"Git LFS for Pop OS"}}}]}},"pageContext":{"tag":"git"}},"staticQueryHashes":["2890141520","440568431"]}
