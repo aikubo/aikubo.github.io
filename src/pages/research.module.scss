@@ -1,5 +1,5 @@
 .toptitle{
-    font-size: xxx-large;
+    font-size: xx-large;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-variant: small-caps;
 }
@@ -11,7 +11,7 @@
 
 .item {
     margin: 1rem 0;
-
+    font-family: 'Roboto Slab', serif;
     a {
         background: #f4f4f4;
         color: #000000;
@@ -24,13 +24,17 @@
         background: #e4e4e4;
     }
 
-    h2 {
+    h3 {
         margin-bottom: 0;
+        font-family: 'Roboto Slab', serif;
     }
 
     p {
+
+        margin-top: 50 px;
         color: #777777;
         font-size: .8rem;
         font-style: italic;
+        font-family: sans-serif;
     }
 }

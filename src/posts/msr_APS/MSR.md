@@ -1,0 +1,33 @@
+---
+title: "Is this the Future of Safe Nuclear?"
+date: "2020-10-26"
+sourcetype: "log"
+imagePath: "src/posts/msr_APS"
+tags: ["PhysicsBuzz", "writing", "atomic"]
+excerpt: Safe by design using Molten Salt Reactors
+---
+
+*AKH: This is a topic I am becoming more informed and interested in. Feel free to contact me to discuss it as I am really excited about innovations in atomic power and I want to advocate for better litracy in science.*
+
+This article was written for the APS Physics Buzz Blog. 
+
+
+
+What if meltdown wasn’t a problem? In fact, melting is a solution. We we explore key innovations to a safe, clean power source.
+
+This article assumes some understanding of nuclear power but if you want a refresher please check out some of our other articles on natural nuclear fission and [nuclear since Chernobyl](http://physicsbuzz.physicscentral.com/2019/08/how-has-nuclear-power-changed-since.html). 
+
+**Introduction to Molten Salt Reactors**
+
+Although there are currently no molten salt reactors (MSRs) in operation the idea isn’t new. The first MSR experiments were held from 1965-1969 at the Oak Ridge National Laboratory. MSRs have several advantages over traditional light water reactors. To understand why we have to look at one math equation, the Carnot equation which expresses the efficiency of a reactor in the form of η (eta) as a function of two temperatures your coolant temperature and the temperature of  your fuel: 
+
+
+
+To maximize efficiency we want Tcold to be small and Thot to be large. Tcold is the coolant that you are using and for us that is limited to the ambient environmental temperature, that cool temperature is already set. So increasing efficiency we must increase Thot, the temperature in our reactor. Light water reactors (LWRs) use water at the main coolant sometimes sourced from a local water source such as the ocean or a lake. However, water boils at just 100 C (212 F) and you can’t cool outsides. In order to increase the range in temperatures, we can put the water in the reactor at high pressure. At high pressure, the boiling point of water increases. However, a reactor at high pressures is an explosion risk and needs expensive containment buildings. 
+
+Molten salt is another coolant option. Salts, depending on composition, have a very high melting point of hundreds of degrees (table salt, NaCl, has a melting point of 801 C (1400 F)) and even higher boiling point. Using multiple loops of pumped molten salt allows use to significantly increase efficiency while operating at close to atmospheric pressures. Molten salt has a high heat capacity and can store large amounts of heat and thus can absorb the massive amounts of heat generated in fission. 
+
+In addition MSRs can have several passive safety features built into them further increasing the safety of nuclear power. Passively safe features are safety measures that don’t depend on human operators or automatic shutdowns but rather the physics first principles*. MSRs have two salts: a fuel salt and a coolant salt. One of the biggest innovations and differences between MSRs and light water reactors is the use of a liquid fuel salt. In light water reactors, the fuel is set into small solid pellets set into fuel pins set into fuel rods. However, in a MSR the fuel is liquid fuel in the form of uranium salts or other fissile salts. One of the big advantages of this is that a liquid fuel can be pumped and can move easily. This leads to a major passive safety feature freeze valve. The freeze valve or freeze plug is designed to melt in the case of a reactor overheating and to drain the fuel into a dump tank, generally an underground tank separate from other reactor parts that will allow the fuel to passively cool into the surrounding ground. This does not rely on sensors or humans figuring out that there is a problem but rather on the simple physics of melting points and gravity. Another example of a passive safety feature is in the case of a fuel salt leak into the coolant salt it will shut down the reaction by diluting the fuel salt to below the critical level for fission. Building passive safety features such as these, and this is just a brief overview, is the key to safe nuclear power. 
+MSRs also have some operational advantages over LWRs including the ability to refuel the system without shutting it down. This also increases the safety of the system considering that the largest nuclear accident, Chernobyl, occured due to improper shutdown. But more over, refueling during operation means no downtime to producing electricity. The MSR can be refueled by pumping in more material that is rich in fissile material into the reactor and allowing it to be dissolved into the fuel salt.
+
+Of course there are difficulties to MSRs including engineering to prevent corrosion by salts, making sure pumps don’t leak salts. However, the potential benefits of this passively safe system are intense. Some proposals for MSRs include salt reservoirs which can store large amounts of heat which could be used for industrial processes such as melting metals, desalination, or district heating. Aluminum smelting for example is an extremely energy intensive process thus a carbon intensive process. Using the immense heat reservoirs generated by fission directly to heat and melt aluminum is vastly more efficient, carbon-free, cools your reactor. More work in reactor engineering and legislature is necessary to get these reactors into the ground but MSRs might be the key to a cooler future: the key to combating climate change. 

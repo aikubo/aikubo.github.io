@@ -42,10 +42,9 @@ const ResumePage = () => {
     return (
         <Layout>
             
-            <h1 className={resumeStyles.toptitle}>CV</h1>
-            <hr />
             <Education />
-            <h2 className={resumeStyles.subtitle}>Research Experience</h2>
+            <br/>
+            <h2 className={resumeStyles.subtitle}>Experience</h2>
             <ol className={resumeStyles.items}>
                 {expr.allMarkdownRemark.edges.map((edge) => {
                     return (
@@ -53,11 +52,8 @@ const ResumePage = () => {
                             <li>
                             <div className={resumeStyles.head}>
                                 <h2>
-                                    {edge.node.frontmatter.organization}
+                                    {edge.node.frontmatter.organization} - {edge.node.frontmatter.role}
                                 </h2>
-                                <h3>
-                                    {edge.node.frontmatter.role}
-                                </h3>
                                 <p>
                                     {edge.node.frontmatter.start} to {edge.node.frontmatter.finish}
                                 </p>

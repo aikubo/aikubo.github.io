@@ -1,31 +1,97 @@
 .toptitle{
-    font-size: xxx-large;
+    font-size: 4rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-variant: small-caps;
+    margin-right: 6rem;
+}
+
+.top{
+    display: inline-flex;
 }
 .posts {
     list-style: none;
+    margin: 1rem 1rem;
+    font-size:.5rem;
+    text-decoration: none;
+}
+
+
+.excerpts {
+    list-style: none;
     margin: 0;
+    font-size:1rem;
+    color: #777777
+
+}
+
+.card{
+    list-style: none;
+    background: #777777;
+    display: flex;
+    position: relative;
+    padding-top: 1rem;
+
+}
+
+.col{
+    display: flex;
+    position: relative;
+    width: 80%;
+
+}
+
+.title{
+
+    a {
+        font-size: 3rem;
+        font-family: 'Roboto Slab';
+        color:  #000000;
+        text-decoration: none;
+
+    }
+
+    a.hover{
+        color: #777777;
+        background:  #000000;
+    }
+}
+
+.topics{
+    font-size: 2rem;
+    font-family:  Helvetica,sans-serif;
+    color:  #000000;
+    text-decoration: none;
+}
+
+.date{
+    color:  #777777;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 0.7rem;
 }
 
 .post {
-    margin: 1rem 0;
+    margin: 0.5rem 0.5rem;
+    text-decoration: none;
 
     a {
-        background: #f4f4f4;
+        background: #e4e4e4 ;
         color: #000000;
         display: block;
-        padding: 1rem;
+        padding: .5rem;
         text-decoration: none;
         font-size: 1rem;
     }
 
     a:hover {
-        background: #e4e4e4;
+        background: #aeaeae;
     }
 
     h2 {
         margin-bottom: 0;
+        font-size: large;
+        font-family: sans-serif, 'Noto Sans';
+        color:  #000000;
+
     }
 
     p {
@@ -33,4 +99,23 @@
         font-size: .8rem;
         font-style: italic;
     }
+}
+
+.tags{
+    padding:  10px;
+    display: inline-flex;
+    font-variant: small-caps;
+    list-style: none ;
+    font-family: 'Noto Sans', 'sans-serif';
+    text-decoration: none;
+    font-size: 0.5rem;
+
+
+}
+
+.logcontainer{
+    display: flex;
+    position: relative;
+    width: 80%
+
 }

@@ -3,9 +3,11 @@ title: "Windows/Pop_OS! Dual Boot on the Razer Blade Stealth (Late 2019)"
 date: "2020-06-25"
 sourcetype: "log"
 imagePath: "src/posts/popos"
+tags: ["linux", "pop_os!", "GPU"]
+excerpt: Mostly painless install of POP_OS! on laptop with dGPU
 ---
 
-Honestly, I expected this post to be much longer. I expected it to be filled with issues then obscure solutions from Stack Exchange. But the process of installing Pop_OS! alongside Windows 10 was suprisingly simple. 
+Honestly, I expected this post to be much longer. I expected it to be filled with issues then obscure solu                        imagePathtions from Stack Exchange. But the process of installing Pop_OS! alongside Windows 10 was suprisingly simple. 
 
 For many years an Ubuntu sole boot has been my daily driver. But when my computer's harddrive began to fail, I decided to upgrade to the Razer Blade Stealth. 
 

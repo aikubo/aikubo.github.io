@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'Allison Kubo',
-    author: 'Kirk Hutchison'
+    title: 'Allison Kubo Hutchison',
+    author: 'Kirk Hutchison and Allison Kubo Hutchison',
+    siteUrl: 'http://www.allisonkubo.com/'
   },
-  plugins: [
+  plugins: [ 'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
       resolve: 'gatsby-source-filesystem',
@@ -26,7 +27,18 @@ module.exports = {
               linkImagesToOriginal: false
             }
           },
-          `gatsby-remark-copy-linked-files`
+          `gatsby-remark-copy-linked-files`,
+          { resolve: `gatsby-plugin-sitemap`,},
+
+          {
+            resolve: `gatsby-plugin-google-fonts`,
+            options: {
+              fonts: [
+                'Noto Sans', 'Roboto Slab'
+                
+              ]
+            }
+          }
         ]
       }
     }

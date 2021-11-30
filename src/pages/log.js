@@ -1,57 +1,97 @@
-import React from 'react'
+import React from 'react' 
 import Layout from '../components/layout'
-import { Link, graphql, useStaticQuery } from 'gatsby'
+import { graphql, StaticQuery } from 'gatsby'
 import logStyles from './log.module.scss'
+import { Link } from 'gatsby'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { Badge, Card, Col, Row, Container } from 'react-bootstrap'
+import kebabCase from 'lodash/kebabCase'
 
-const LogPage = () => {
-    const data = useStaticQuery(graphql`
-        query {
-            allMarkdownRemark (
-                filter: {
-                    frontmatter: {
-                        sourcetype: {
-                            eq: "log"
-                        }
+const LogPage = () => (
+    <Layout>
+
+    <Row>
+    <Col className={logStyles.col}>
+    <StaticQuery 
+        query={logQuery} 
+        render={data => {
+            return(
+                <div>
+                    {data.allMarkdownRemark.edges.map(({node}) => (
+                        //<Container>
+                            <Card 
+                            border="light"                   
+                            
+                            className={logStyles.card}
+                            >  
+                                
+                                <Link to={`/log/${node.fields.slug}`}>
+                                    <Card.Title className={logStyles.title}> {node.frontmatter.title} </Card.Title>
+                                </Link>
+
+                                <Card.Subtitle className={logStyles.date}>
+
+                                    {node.frontmatter.date}
+                                    <div >
+                                    {node.frontmatter.tags.map(tag => (
+                                        <Link to={`/tags/${kebabCase(tag)}`}> 
+                                            <Badge variant="dark" className={logStyles.tags}>{tag}</Badge>{'  '}
+                                        </Link>
+                                    ))}
+                                    </div>
+                                    </Card.Subtitle>
+                                
+                                <Card.Body className={logStyles.excerpts}>
+                                    <p>
+                                     {node.excerpt}
+                                    </p>
+                                    
+                                </Card.Body>
+
+                                <Link to={`/log/${node.fields.slug}`} className="btn btn-outline-secondary btn-sm float right text-uppercase">Read More</Link>
+
+                            </Card>
+                            
+                        //</Container>
+                    ))}
+                </div>
+        )
+    }}
+    />
+    </Col>
+   </Row>
+ </Layout>
+)
+
+const logQuery = graphql`
+    query {
+        allMarkdownRemark ( sort: {fields: [frontmatter___date], order: DESC}
+            filter: {
+                frontmatter: {
+                    sourcetype: {
+                        eq: "log"
                     }
                 }
-            ) {
-                edges {
-                    node {
-                        frontmatter {
-                            title
-                            date
-                        }
-                        fields {
-                            slug
-                        }
+            }
+        ) {
+            edges {
+                node {
+                    excerpt(format: MARKDOWN)
+                    frontmatter {
+                        title
+                        date
+                        tags
+                        
+                    
+                    }
+                    fields {
+                        slug
                     }
                 }
             }
         }
-    `)
+    }
+`
 
-    return (
-        <Layout>
-            <h1 className={logStyles.toptitle}>Log</h1>
-            <hr />
-            <ol className={logStyles.posts}>
-                {data.allMarkdownRemark.edges.map((edge) => {
-                    return (
-                        <li className={logStyles.post}>
-                            <Link to={`/log/${edge.node.fields.slug}`}>
-                                <h2>
-                                    {edge.node.frontmatter.title}
-                                </h2>
-                                <p>
-                                    {edge.node.frontmatter.date}
-                                </p>
-                            </Link>
-                        </li>
-                    )
-                })}
-            </ol>
-        </Layout>
-    )
-}
 
 export default LogPage

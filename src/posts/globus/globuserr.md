@@ -1,8 +1,10 @@
 ---
 title: "Globus tcllib not found Error"
-date: "2020-07-2"
+date: "2020-07-02"
 sourcetype: "log"
 imagePath: "src/posts/globus"
+tags: ["linux", "ErrorOfTheWeek", "globus"]
+excerpt: "When I was trying to install globus connect using the downloaded script I was getting this error..."
 ---
 
 ## Error of the Week

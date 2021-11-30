@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import researchStyles from './research.module.scss'
+import container from '../styles/pageStyle.scss'
 
 const ResearchPage = () => {
     const data = useStaticQuery(graphql`
@@ -17,9 +18,11 @@ const ResearchPage = () => {
             ) {
                 edges {
                     node {
+                        excerpt(format: MARKDOWN)
                         frontmatter {
                             title
                             advisor
+                            
                         }
                         fields {
                             slug
@@ -32,19 +35,22 @@ const ResearchPage = () => {
 
     return (
         <Layout>
-            <h1 className={researchStyles.toptitle}>Research</h1>
-            <hr />
+
             <ol className={researchStyles.items}>
+
+
                 {data.allMarkdownRemark.edges.map((edge) => {
                     return (
                         <li className={researchStyles.item}>
                             <Link to={`/research/${edge.node.fields.slug}`}>
-                                <h2>
+                                <h3>
                                     {edge.node.frontmatter.title}
-                                </h2>
+                                </h3>
                                 <p>
-                                    {edge.node.frontmatter.date}
+                                    {edge.node.excerpt}
                                 </p>
+
+                                <button>read more</button>
                             </Link>
                         </li>
                     )
