@@ -1,0 +1,19 @@
+---
+title: "Stratovolcanoes Represent 1% of Erupted Volume in Cascades"
+date: "2020-09-02"
+sourcetype: "log"
+imagePath: "src/posts/stratovo"
+tags: ["writing", "PhysicsBuzz", "volcanoes"]
+excerpt: New research by the University of Oregon and partners at the United States Geologic Survey reveals 
+---
+
+Originally posted at [Physics Central](http://physicsbuzz.physicscentral.com/)
+
+Shout out to my friend [Dan O'Hara]() and my advisor Leif Karlstrom's great paper!!
+
+
+New research by the University of Oregon and partners at the United States Geologic Survey reveals the landscape dotted with 2835 volcanoes from Northern California to the border of Washington. This area is a center for volcanic activity due to the subducting Juan De Fuca plate which produces melt that rises up through the crust and eventually forms the striking landscape of the Pacific Northwest. The Cascades Arc is home to the famous 1980 Mount Saint Helens (Lawetlat'la) eruption and to the beautiful Mount Rainier (Tacoma). However, the soaring, snowcapped, stratovolcanoes dominate the landscape but actually represent only 1% of the total volume of volcanic features in the Cascades Range this recently published study finds. This study estimated the total volume of the vents to be ~2570 km3 which may only represent half of the total erupted volume with the rest spread in deposits.
+
+Using high resolution mapping of the PNW, this study identified 2,835 volcanic edifices in the American portion of the Cascades. An edifice in this case refers to structures built by the eruption of volcanic material including lava flows, ash, and tephra. The team used an algorithm to systematically pick edifices from the digital elevation maps. The majority of the edifices identified in this study were small features representing transient volcanic processes unlike the large stratovolcanoes which are built over long periods of stacked volcanic activity. One-time eruptions, termed monogenetic, eruptions form fields of cinder cones which dot the Cascades like freckles. However, summed together these features dominate the erupted volumes in the Cascades. This new study also synthesized geophysical measurements of crustal features such as heat flux and gravity anomalies and correlated this to the topographic expression of volcanoes. Volcanologists use measurements of quantities like heat flux, the amount of heat coming through the crust, and gravity anomalies, small changes in the gravity which indicate different densities in the crust, to look for signatures. In addition to other geophysical techniques such as seismic velocity which slow when they reach partially melted magma systems, volcanologists can identify magma chambers. This study then links these observations to the surface expression of volcanic edifices. They find that it is likely that magma rising to the surface from melting caused by the subducting plate is focused to areas with volcanism. Loading of many vents and the formation of magma chambers focused additional magma to focus in clusters. 
+
+Throughout the US, the USGS has identified 18 volcanoes to be very high risk including 11 in the Cascades Arc. This list includes recently active volcanoes such as Mount Saint Helens (Lawetlat'la) and Lassen Volcanic Center (Amblu Kai) which last erupted in 1917 but also includes currently quiescent volcanoes such as Mount Rainier (Tacoma) and Mount Hood (Wy’east). Volcanoes in the Cascades Arc have been known to produce an array of volcanic hazards such as lava flows or more explosive eruptions as seen in the devastating 1980 Mount Saint Helens (Lawetlat'la). However, of large concern are many less explosive hazards such as mudflows from the flanks of Rainer (Tacoma). This new study emphasizes the dynamic, active landscape people of the PNW inhabit and enjoy is not without its hazards.
