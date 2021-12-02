@@ -14,8 +14,9 @@
 <url> <loc>http://www.allisonkubo.com/tags/physics-buzz</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://www.allisonkubo.com/tags/atomic</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://www.allisonkubo.com/tags/volcanoes</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://www.allisonkubo.com/tags/matplotlib</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://www.allisonkubo.com/tags/git</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://www.allisonkubo.com/tags/matplotlib</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://www.allisonkubo.com/tags/imageprocessing</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://www.allisonkubo.com/research/dikes</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://www.allisonkubo.com/research/lava</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://www.allisonkubo.com/research/sample</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -34,6 +35,8 @@
 <url> <loc>http://www.allisonkubo.com/log/MSR</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://www.allisonkubo.com/log/strato</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://www.allisonkubo.com/log/lfs</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://www.allisonkubo.com/log/shortcut1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://www.allisonkubo.com/log/magicmp</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://www.allisonkubo.com/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://www.allisonkubo.com/log/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://www.allisonkubo.com/logold/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
